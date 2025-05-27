@@ -44,11 +44,6 @@ function displayProducts(products) {
       </div>
     `;
 
-    // Remove product card if image fails to load
-    const img = div.querySelector('img');
-    img.onerror = () => {
-      div.remove();
-    };
 
     container.appendChild(div);
   });
@@ -65,7 +60,10 @@ async function main() {
       console.log('Loading products from localStorage');
     } else {
      
-      productsToShow = selection.filter(p => p.image_link && p.image_link.trim() !== '').slice(0, maxProducts);
+      productsToShow = selection
+  .filter(p => p.image_link && p.image_link.trim() !== '')
+  .slice(0, maxProducts);
+
 
       localStorage.setItem('selectedProducts', JSON.stringify(productsToShow));
       console.log('Products saved to localStorage');
