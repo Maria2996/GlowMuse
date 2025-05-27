@@ -34,7 +34,7 @@ function displayProducts(products) {
     div.innerHTML = `
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="${product.image_link}" alt="${product.name}" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x200?text=Sin+imagen';" />
+          <img src="${product.image_link}" alt="${product.name}" />
           <h3>${product.name}</h3>
         </div>
         <div class="flip-card-back">
@@ -44,7 +44,7 @@ function displayProducts(products) {
       </div>
     `;
 
-
+  
     container.appendChild(div);
   });
 }
