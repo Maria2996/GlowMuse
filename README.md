@@ -30,6 +30,8 @@ Simplemente visita:
 
 [**GlowMuse - Demo Online**](https://maria2996.github.io/GlowMuse/)
 
+![Demo GIF de GlowMuse](./images/gifpage.gif)
+
 ---
 
 ## 📫 Dónde encontrarme
